@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.urls import reverse
+
 
 DATA = {
     'omlet': {
@@ -18,6 +20,7 @@ DATA = {
     },
     # можете добавить свои рецепты ;)
 }
+
 
 def calculator(request, name):
     """Считает колличество ингредиентов для блюд"""
